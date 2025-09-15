@@ -12,7 +12,10 @@ It aims to move beyond traditional passwords by providing a **multi-modal authen
 - **Multi-Sample Enrollment** – Improves reliability by storing multiple samples per user.  
 - **Pattern Authentication** – Alternative login option with a dot-grid pattern system.  
 - **Dual-Mode Security** – Supports both voice and pattern authentication for flexibility.  
-- **Accessibility** – Voice mode for visually impaired users, pattern mode for hearing-impaired or speech-limited users.  
+- **Accessibility & Inclusivity** – Designed with disabilities in mind:  
+  - Voice mode for visually impaired users  
+  - Pattern mode for hearing-impaired or speech-limited users  
+  - Simple interaction for users with limited motor skills   
 - **Modern UI** – Polished interface with real-time feedback (waveforms and interactive patterns).  
 
 ---
