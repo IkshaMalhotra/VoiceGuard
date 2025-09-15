@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoiceGuard - Advanced Voice Authentication</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon">🔊</span>
+                <span class="brand-text">VoiceGuard</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" data-page="home" class="nav-link active">Home</a></li>
+                <li><a href="#" data-page="about" class="nav-link">About</a></li>
+                <li><a href="#" data-page="how-it-works" class="nav-link">How It Works</a></li>
+                <li><a href="#" data-page="login" class="nav-link">Login</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+        <div class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Authenticate with Your Voice or Pattern</h1>
+                <p class="hero-subtitle">Next-generation biometric security using advanced voiceprint</p>
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">🔒</div>
+                        <span>Secure</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">⚡</div>
+                        <span>Fast</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🎯</div>
+                        <span>Accurate</span>
+                    </div>
+                </div>
+                <button class="cta-button" data-page="login">
+                    Start Authentication
+                    <span class="button-glow"></span>
+                </button>
+            </div>
+            <div class="hero-visual">
+                <div class="voice-waves">
+                    <div class="wave wave-1"></div>
+                    <div class="wave wave-2"></div>
+                    <div class="wave wave-3"></div>
+                    <div class="wave wave-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Page -->
+    <div id="about" class="page">
+        <div class="container">
+            <h1 class="page-title">About Voice Authentication</h1>
+            <div class="content-grid">
+                <div class="content-card">
+                    <div class="card-icon">🛡️</div>
+                    <h3>Enhanced Security</h3>
+                    <p>Your voice is unique like your fingerprint. Our advanced audio feature extraction creates a
+                        secure voiceprint that's nearly impossible to replicate.</p>
+                </div>
+                <div class="content-card">
+                    <h3>Convenience</h3>
+                    <div class="card-icon">⚡</div>
+                    <p>No more passwords to remember or tokens to carry. Simply speak and gain instant access to your
+                        accounts.</p>
+                </div>
+                <div class="content-card">
+                    <div class="card-icon">🧠</div>
+                    <h3>AI-Powered Analysis</h3>
+                    <p>Using Mel-frequency cepstral coefficients (MFCCs) and spectral analysis to create a detailed
+                        acoustic signature of your voice.</p>
+                </div>
+                <div class="content-card">
+                    <div class="card-icon">🌐</div>
+                    <h3>Universal Access</h3>
+                    <p>Works across all devices with microphone capability. Your voice is always with you, making access
+                        truly universal.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- How It Works Page -->
+    <div id="how-it-works" class="page">
+        <div class="container">
+            <h1 class="page-title">How It Works</h1>
+            <div class="steps-container">
+                <div class="step-item">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Record Your Voice</h3>
+                        <p>Speak a phrase clearly into your microphone. Our system captures high-quality audio samples
+                            for analysis.</p>
+                        <div class="step-visual">
+                            <div class="mic-icon">🎤</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Extract Audio Features</h3>
+                        <p>Advanced algorithms analyze your voice to extract unique acoustic features like MFCCs,
+                            spectral centroid, and pitch characteristics.</p>
+                        <div class="step-visual">
+                            <div class="analysis-bars">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Authenticate & Verify</h3>
+                        <p>Your voiceprint is compared using cosine similarity. If the match exceeds 85% confidence,
+                            authentication is successful.</p>
+                        <div class="step-visual">
+                            <div class="check-icon">✅</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Pattern and verify instead!</h3>
+                        <p>Use pattern authentication incase you are in a Noisy Environment or your microphone does not
+                            support!</p>
+                        <div class="step-visual">
+                            <div class="check-icon">•••</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Page -->
+    <div id="login" class="page">
+        <div class="container">
+            <h1 class="page-title">Voice Authentication</h1>
+
+            <!-- Enrollment Section -->
+            <div class="auth-card" id="enrollment-section">
+                <div class="card-header">
+                    <h2>Voice Enrollment</h2>
+                    <p>Record your voice to create a secure voiceprint</p>
+                </div>
+                <div class="card-body">
+                    <div class="phrase-display">
+                        <p>Please say: <span class="phrase-text">"My voice is my password verify one two three"</span>
+                        </p>
+                    </div>
+                    <div class="voice-input">
+                        <button id="record-enrollment" class="record-button">
+                            <span class="record-icon">🎤</span>
+                            <span class="record-text">Start Recording</span>
+                        </button>
+                        <div class="recording-status" id="recording-status"></div>
+                    </div>
+                    <div class="waveform-container">
+                        <div id="waveform-enrollment"></div>
+                    </div>
+                    <button id="save-enrollment" class="action-button" style="display: none;">
+                        Save Voiceprint
+                        <span class="button-glow"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Authentication Section -->
+            <div class="auth-card" id="authentication-section" style="display: none;">
+                <div class="card-header">
+                    <h2>Voice Authentication</h2>
+                    <p>Speak the same phrase to authenticate</p>
+                </div>
+                <div class="card-body">
+                    <div class="phrase-display">
+                        <p>Please say: <span class="phrase-text">"My voice is my password verify one two three"</span>
+                        </p>
+                    </div>
+                    <div class="voice-input">
+                        <button id="record-auth" class="record-button">
+                            <span class="record-icon">🎤</span>
+                            <span class="record-text">Authenticate</span>
+                        </button>
+                        <div class="recording-status" id="auth-status"></div>
+                    </div>
+                    <div class="waveform-container">
+                        <div id="waveform-auth"></div>
+                    </div>
+                    <div class="similarity-display" id="similarity-display" style="display: none;">
+                        <div class="similarity-score">
+                            <span class="score-label">Similarity Score:</span>
+                            <span class="score-value" id="score-value">0%</span>
+                        </div>
+                        <div class="similarity-bar">
+                            <div class="similarity-fill" id="similarity-fill"></div>
+                        </div>
+                    </div>
+                    <div class="auth-result" id="auth-result"></div>
+                </div>
+            </div>
+
+            <!-- Add after authentication-section in #login .container -->
+            <div class="auth-card" id="pattern-section" style="display: none;">
+                <div class="card-header">
+                    <h2>Pattern Authentication</h2>
+                    <p>Draw your pattern to enroll or authenticate</p>
+                </div>
+                <div class="card-body">
+                    <div class="pattern-grid-container">
+                        <canvas id="pattern-canvas" width="300" height="300" tabindex="0"></canvas>
+                    </div>
+                    <div class="pattern-controls">
+                        <button id="enroll-pattern" class="action-button">Enroll Pattern</button>
+                        <button id="auth-pattern" class="action-button">Authenticate</button>
+                        <button id="clear-pattern" class="secondary-button">Clear</button>
+                    </div>
+                    <div class="auth-result" id="pattern-auth-result"></div>
+                </div>
+            </div>
+
+            <!-- Switch buttons (place inside #login .container, e.g. after controls) -->
+            <div class="pattern-switch-controls">
+                <button id="use-pattern" class="secondary-button">Use Pattern Instead</button>
+                <button id="use-voice" class="secondary-button" style="display: none;">Use Voice Instead</button>
+            </div>
+
+            <!-- Feature Comparison Chart -->
+            <div class="chart-container" id="chart-container" style="display: none;">
+                <h3>Voiceprint Feature Comparison</h3>
+                <canvas id="feature-chart"></canvas>
+            </div>
+
+            <!-- Controls -->
+            <div class="controls">
+                <button id="reset-enrollment" class="secondary-button">
+                    Reset Enrollment
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Scripts -->
+    <!-- <script src="https://unpkg.com/wavesurfer.js@7/dist/wavesurfer.umd.min.js"></script> -->
+    <script src="https://unpkg.com/meyda@5.2.0/dist/web/meyda.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <script src="script.js"></script>
+    <script src="voiceAuth.js"></script>
+    <script src="pattern.js"></script>
+
+</body>
+
+</html>
