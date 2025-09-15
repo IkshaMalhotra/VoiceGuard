@@ -1,5 +1,4 @@
 # VoiceGuard – Advanced Voice Authentication
-About
 Passwords are hard to remember and often insecure. VoiceGuard replaces them with advanced voice authentication, creating a unique voiceprint for each user. And if the environment is noisy, or your device doesn’t support voice, you can switch seamlessly to pattern authentication.
 
 ## Overview
